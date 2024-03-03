@@ -1,6 +1,9 @@
-const http = require('http');
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('Hello World!');
-    res.end();
-}).listen(8080);
+async function myFunction() {
+    try {
+        const result = await myPromise;
+        console.log(result);
+    } catch (error) {
+        console.log(error);
+    }
+}
+myFunction();
